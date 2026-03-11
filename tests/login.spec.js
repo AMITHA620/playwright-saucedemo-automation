@@ -17,8 +17,8 @@ test('Invalid Login Test', async ({ page }) => {
 
   await page.goto('https://www.saucedemo.com/');
 
-  await page.fill('#user-name', 'wrong');
-  await page.fill('#password', 'wrong');
+  await page.fill('#user-name', 'AMITHA');
+  await page.fill('#password', '345');
 
   await page.click('#login-button');
 
