@@ -12,13 +12,18 @@ export default defineConfig({
   /* Run multiple workers (parallel execution) */
   workers: 3,
 
-  reporter: 'html',
+  /* Reporters */
+  reporter: [
+    ['list'],
+    ['html'],
+    ['allure-playwright']
+  ],
 
   use: {
     /* Screenshot on test failure */
     screenshot: 'only-on-failure',
 
-    /* Record video when test fails (optional but useful) */
+    /* Record video when test fails */
     video: 'retain-on-failure',
 
     /* Trace for debugging failed tests */
