@@ -21,7 +21,7 @@ Test Scenarios
 
 1. Clone the repository
 
-git clone <your-repository-url>
+git clone 
 
 2. Open the project folder
 
